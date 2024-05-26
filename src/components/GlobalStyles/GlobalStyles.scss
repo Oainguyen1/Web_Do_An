@@ -1,7 +1,10 @@
 @import 'normalize.css';
 
 :root {
-  --primary: blue;
+  --primary: rgb(77, 72, 233);
+  --black: #000;
+  --text-color: #11006f;
+  --blue: rgb(0, 68, 255);
 }
 
 * {
@@ -18,4 +21,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+
+a[href] {
+  text-decoration: none;
 }
