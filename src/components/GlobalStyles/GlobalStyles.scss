@@ -1,28 +1,30 @@
 @import 'normalize.css';
 
 :root {
-  --primary: rgb(77, 72, 233);
-  --black: #000;
-  --text-color: #11006f;
-  --blue: rgb(0, 68, 255);
+    --primary: #f6e56c;
+    --black: #000;
+    --text-color: #11006f;
+    --orange: orange;
+    --price-color: #cd151c;
+    --original-price: #8a8a8f;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
 }
 
 a[href] {
-  text-decoration: none;
+    text-decoration: none;
 }

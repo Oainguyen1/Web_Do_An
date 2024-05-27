@@ -36,7 +36,7 @@ function Header() {
                     <a href="./">
                         <h1>Trẻ em </h1>
                     </a>
-                    <a href="./">
+                    <a href="./about">
                         <h1>Giới thiệu </h1>
                     </a>
                     <a href="./">
@@ -49,7 +49,7 @@ function Header() {
                         <div className={cx('badge')}>0</div>
                     </div>
                     <div className={cx('user')}>
-                        <a href="./">
+                        <a href="./login">
                             <h1>Đăng nhập</h1>
                         </a>
                         <h1>/</h1>
