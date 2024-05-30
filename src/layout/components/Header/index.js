@@ -53,7 +53,7 @@ function Header() {
                             <h1>Đăng nhập</h1>
                         </a>
                         <h1>/</h1>
-                        <a href="./">
+                        <a href="./signin">
                             <h1>Đăng Ký</h1>
                         </a>
                     </div>

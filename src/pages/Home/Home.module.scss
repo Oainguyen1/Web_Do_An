@@ -1,6 +1,7 @@
 .wrapper {
     width: 100%;
     display: flex;
+    margin-bottom: 100px;
 }
 
 .content {
@@ -52,6 +53,8 @@
     h1 {
         color: var(--text-color);
         margin-bottom: 30px;
+        font-family: 'SVN-Gilroy-Bold', sans-serif;
+        font-size: 25px;
     }
 }
 
@@ -66,34 +69,52 @@
     width: 100%;
     margin: 0 10px;
 
-    img {
+    .produce-item {
         width: 220px;
         height: 300px;
         margin: 0 10px;
-    }
-    a {
-        margin-top: 10px;
-        text-align: center;
-        text-decoration: none;
-        color: var(--black);
+        img {
+            width: 220px;
+            height: 300px;
+            margin: 0 10px;
+        }
+        a {
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
 
-        &:hover {
-            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        h3 {
+            margin: 0 5px;
+            text-align: center;
+            color: var(--black);
+            font-family: 'SVN-Gilroy', sans-serif;
+            font-size: 16px;
         }
     }
 }
 
+.price-container {
+    margin-top: 20px;
+    bottom: 5px;
+}
+
 .discounted-price {
-    margin-top: 5px;
     color: var(--price-color);
     margin-right: 10px;
     margin-left: 10px;
-    font-family: 'SVN-Gilroy Bold', sans-serif;
+    font-family: 'SVN-Gilroy-Bold', sans-serif;
+    font-size: 16px;
 }
 
 .original-price {
     color: var(--original-price);
     text-decoration: line-through;
+    font-family: 'SVN-Gilroy', sans-serif;
+    font-size: 14px;
 }
 
 .title-sale {

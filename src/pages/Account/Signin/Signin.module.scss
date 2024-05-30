@@ -1,12 +1,13 @@
 // $primary-color: #ffa726; // Light orange
 // $secondary-color: #fb8c00; // Darker orange
+$background-color: #fafcd3;
 // var(--white): #ffffff;
-// $border-color: #ccc;
+// var(--placeholder-color): #ccc;
 // var(--text-color): #333;
 $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 $transition-time: 0.3s;
 
-// var(--google-color): #db4437;
+// $google-color: #db4437;
 // $facebook-color: #3b5998;
 
 // Mixin for a smooth transition
@@ -16,15 +17,14 @@ $transition-time: 0.3s;
 
 .wrapper {
     display: flex;
-
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height */
     background-color: var(--background-login);
-    margin-top: 70px;
+    padding: 20px; /* Add padding to give space around the form */
 }
 
-.login-container {
+.signin-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,15 +33,31 @@ $transition-time: 0.3s;
     background: var(--white);
     box-shadow: $box-shadow;
     border-radius: 10px;
+    position: sticky;
+    top: 20px; /* Adjust the distance from the top as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: var(--white);
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    //width: 100%;
+    //max-width: 400px;
+    height: auto; /* Set height to auto */
+    overflow-y: auto;
+    z-index: 1; /* Ensure the form appears above other content */
     width: 100%;
     max-width: 600px;
+    margin-top: 130px;
 }
 
 .title {
     margin-bottom: 20px;
-    font-family: 'SVN-Gilroy', sans-serif;
     font-size: 2.5rem;
     color: var(--text-color);
+    font-family: 'SVN-Gilroy', sans-serif;
 }
 
 .form {
@@ -66,7 +82,7 @@ $transition-time: 0.3s;
     border: 1px solid var(--placeholder-color);
     border-radius: 5px;
     font-size: 1rem;
-    font-family: 'SVN-Gilroy', sans-serif;
+    @include transition(border-color);
 
     &:focus {
         border-color: var(--login-btn);
@@ -82,57 +98,24 @@ $transition-time: 0.3s;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
-    cursor: pointer;
-    font-weight: bold;
-    @include transition(--background-login);
-
-    &:hover {
-        background-color: var(--login-btn-hover);
-    }
-}
-.buttony {
-    width: 100%;
-    padding: 12px;
-    background-color: #ffa726;
-    color: var(--white);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
     font-family: 'SVN-Gilroy', sans-serif;
     cursor: pointer;
     font-weight: bold;
-    @include transition(--background-login);
+    @include transition(background-color);
 
     &:hover {
         background-color: var(--login-btn-hover);
     }
 }
 
-.extra-options {
-    margin-top: 10px;
-    text-align: right;
-
-    .forgot-password {
-        color: var(--login-btn);
-        text-decoration: none;
-        font-size: 1.5rem;
-        @include transition(color);
-        font-family: 'SVN-Gilroy-Bold', sans-serif;
-
-        &:hover {
-            color: var(--login-btn-hover);
-        }
-    }
-}
-
-.signup-prompt {
+.signin-prompt {
     margin-top: 20px;
     text-align: center;
     font-size: 1.5rem;
     color: var(--text-color);
     font-family: 'SVN-Gilroy', sans-serif;
 
-    .signup-link {
+    .signin-link {
         color: var(--login-btn);
         text-decoration: none;
         font-weight: bold;

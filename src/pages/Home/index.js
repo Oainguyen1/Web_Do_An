@@ -22,7 +22,13 @@ const images = [
 ];
 
 const produceData = [
-    { src: Produce, title: 'Áo', url: '/ao', price: '100,000 VND', previousPrices: '140,000VND' },
+    {
+        src: Produce,
+        title: 'Áo chống nắng đa năng Anti UV - Versatile',
+        url: '/ao',
+        price: '100,000 VND',
+        previousPrices: '140,000VND',
+    },
     { src: Produce2, title: 'Áo 2', url: '/ao2', price: '200,000 VND', previousPrices: '140,000VND' },
     { src: Produce3, title: 'Áo 3', url: '/ao3', price: '300,000 VND', previousPrices: '140,000VND' },
     { src: Produce4, title: 'Áo 4', url: '/ao4', price: '400,000 VND', previousPrices: '140,000VND' },
