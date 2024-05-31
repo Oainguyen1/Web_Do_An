@@ -4,11 +4,13 @@ import styles from './Home.module.scss';
 import image from '~/assets/Slide/slide.png';
 import image2 from '~/assets/Slide/slide2.png';
 import image3 from '~/assets/Slide/slide3.png';
-import saleImage from '~/assets/Title/sale.png';
-import Produce from '~/assets/HomeProduce/produce.png';
-import Produce2 from '~/assets/HomeProduce/produce2.png';
-import Produce3 from '~/assets/HomeProduce/produce3.png';
-import Produce4 from '~/assets/HomeProduce/produce4.png';
+import flashSale from '~/assets/Logo/sale_icon.png';
+import titleImage from '~/assets/Title/flash_sale.png';
+import titleImage2 from '~/assets/Title/best_seller.png';
+import Produce from '~/assets/SaleProduce/produce.png';
+import Produce2 from '~/assets/SaleProduce/produce2.png';
+import Produce3 from '~/assets/SaleProduce/produce3.png';
+import Produce4 from '~/assets/SaleProduce/produce4.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -74,10 +76,13 @@ function Home() {
                     <div className={cx('menu-list')}></div>
                     <div className={cx('produce-list')}>
                         <div className={cx('sale')}>
-                            <h1>Ưu đãi 30%</h1>
+                            <div className={cx('flash-sale')}>
+                                <img src={flashSale} alt="" />
+                                <h1>Ưu đãi 30%</h1>
+                            </div>
                             <div className={cx('images-container')}>
                                 <div className={cx('title-sale')}>
-                                    <img src={saleImage} alt="" />
+                                    <img src={titleImage} alt="" />
                                 </div>
                                 <div className={cx('images-produce')}>
                                     {produceData.map((item, index) => (
@@ -95,11 +100,11 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={cx('sale')}>
-                            <h1>Ưu đãi 30%</h1>
+                        <div className={cx('best-seller')}>
+                            <h1>Bán chạy nhất</h1>
                             <div className={cx('images-container')}>
                                 <div className={cx('title-sale')}>
-                                    <img src={saleImage} alt="" />
+                                    <img src={titleImage2} alt="" />
                                 </div>
                                 <div className={cx('images-produce')}>
                                     {produceData.map((item, index) => (

@@ -24,26 +24,26 @@ function Header() {
                     </div>
                 </div>
                 <div className={cx('action')}>
-                    <a href="./">
+                    <a href="./saleup">
                         <h1>Sale up to 30% </h1>
                     </a>
                     <a href="./boy">
                         <h1>Nam </h1>
                     </a>
-                    <a href="./">
+                    <a href="./girl">
                         <h1>Nữ</h1>
                     </a>
-                    <a href="./">
+                    <a href="./children">
                         <h1>Trẻ em </h1>
                     </a>
                     <a href="./about">
                         <h1>Giới thiệu </h1>
                     </a>
-                    <a href="./">
+                    <a href="./blog">
                         <h1>Blog </h1>
                     </a>
                     <div className={cx('cart-container')}>
-                        <a className={cx('cart')} href="./">
+                        <a className={cx('cart')} href="./cart">
                             <FontAwesomeIcon icon={faCartShopping} />
                         </a>
                         <div className={cx('badge')}>0</div>
