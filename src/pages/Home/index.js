@@ -76,10 +76,10 @@ function Home() {
                     <div className={cx('menu-list')}></div>
                     <div className={cx('produce-list')}>
                         <div className={cx('sale')}>
-                            <div className={cx('flash-sale')}>
+                            <a href="./saleup" className={cx('flash-sale')}>
                                 <img src={flashSale} alt="" />
                                 <h1>Ưu đãi 30%</h1>
-                            </div>
+                            </a>
                             <div className={cx('images-container')}>
                                 <div className={cx('title-sale')}>
                                     <img src={titleImage} alt="" />
