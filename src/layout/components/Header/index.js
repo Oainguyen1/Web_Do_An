@@ -39,9 +39,7 @@ function Header() {
                     <a href="./about">
                         <h1>Giới thiệu </h1>
                     </a>
-                    <a href="./blog">
-                        <h1>Blog </h1>
-                    </a>
+
                     <div className={cx('cart-container')}>
                         <a className={cx('cart')} href="./cart">
                             <FontAwesomeIcon icon={faCartShopping} />
