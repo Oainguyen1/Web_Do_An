@@ -8,6 +8,7 @@ import Signin from '~/pages/Account/Signin';
 import About from '~/pages/About';
 import Blog from '~/pages/Blog';
 import SaleUp from '~/pages/Produce/SaleUp';
+import Product_detail from '~/pages/Product_detail';
 
 //Public Routes
 const publicRoutes = [
@@ -21,6 +22,7 @@ const publicRoutes = [
     { path: '/about', component: About },
     { path: '/blog', component: Blog },
     { path: '/saleup', component: SaleUp },
+    { path: '/product-detail', component: Product_detail },
 ];
 
 //Private Routes
