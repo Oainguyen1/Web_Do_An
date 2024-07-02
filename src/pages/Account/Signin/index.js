@@ -3,7 +3,7 @@ import styles from './Signin.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Register() {
+function Signin() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('signin-container')}>
@@ -48,4 +48,4 @@ function Register() {
     );
 }
 
-export default Register;
+export default Signin;
