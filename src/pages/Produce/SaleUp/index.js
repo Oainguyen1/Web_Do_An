@@ -53,6 +53,20 @@ function SaleUp() {
                             </div>
                         ))}
                     </div>
+                    <div className={cx('images-produce')}>
+                        {produceData.map((item, index) => (
+                            <div key={index} className={cx('produce-item')}>
+                                <img src={item.src} alt={`Produce ${index + 1}`} />
+                                <a href={item.url}>
+                                    <h3>{item.title}</h3>
+                                </a>
+                                <div className={cx('price-container')}>
+                                    <span className={cx('discounted-price')}>{item.price}</span>
+                                    <span className={cx('original-price')}>{item.previousPrices}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
