@@ -1,6 +1,17 @@
 import classNames from 'classnames/bind';
 import styles from './Product_detail.module.scss';
 import React, { useState } from 'react';
+import detail1 from '~/assets/Product_detail/detail1.jpg';
+// import detail2 from '~/assets/Product_detail/detail2.jpg';
+// import detail3 from '~/assets/Product_detail/detail3.jpg';
+// import detail4 from '~/assets/Product_detail/detail4.jpg';
+// import detail5 from '~/assets/Product_detail/detail5.jpg';
+import detail6 from '~/assets/Product_detail/detail6.jpg';
+import detail7 from '~/assets/Product_detail/detail7.jpg';
+import detail8 from '~/assets/Product_detail/detail8.jpg';
+import detail9 from '~/assets/Product_detail/detail9.jpg';
+import detail10 from '~/assets/Product_detail/detail10.jpg';
+
 
 const cx = classNames.bind(styles);
 
@@ -14,33 +25,33 @@ function Product_detail() {
     return (
         <div className={cx('product-page')}>
             <div className={cx('image-gallery')}>
-                <img src={`${process.env.PUBLIC_URL}/assets/a1.jpg`} alt="Main Product" className={cx('main-image')} />
+                <img src={detail1} alt="Main Product" className={cx('main-image')} />
                 <div className={cx('thumbnail-list')}>
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/a2.jpg`}
+                        src={detail7}
                         alt="Thumbnail 1"
                         className={cx('thumbnail')}
                     />
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/a3.jpg`}
+                        src={detail8}
                         alt="Thumbnail 2"
                         className={cx('thumbnail')}
                     />
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/a4.jpg`}
+                        src={detail9}
                         alt="Thumbnail 3"
                         className={cx('thumbnail')}
                     />
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/a5.jpg`}
+                        src={detail10}
                         alt="Thumbnail 4"
                         className={cx('thumbnail')}
                     />
-                    <img
-                        src={`${process.env.PUBLIC_URL}/assets/a6.jpg`}
+                    {/* <img
+                        src={detail6}
                         alt="Thumbnail 5"
                         className={cx('thumbnail')}
-                    />
+                    /> */}
                 </div>
             </div>
             <div className={cx('product-details')}>
@@ -51,12 +62,12 @@ function Product_detail() {
                 <h2>399.000 ₫</h2>
                 <div className={cx('color-options')}>
                     <p>Màu sắc: Navy</p>
-                    <div className={cx('color-thumbnails')}>
-                        <img src="path/to/navy.jpg" alt="Navy" />
-                        <img src="path/to/orange.jpg" alt="Cam" />
-                        <img src="path/to/green.jpg" alt="Xanh lá" />
-                        <img src="path/to/black.jpg" alt="Đen" />
-                        <img src="path/to/white.jpg" alt="Trắng" />
+                    <div className={cx('color-buttons')}>
+                        <button className={cx('color-button')}>Navy</button>
+                        <button className={cx('color-button')}>Đen</button>
+                        <button className={cx('color-button')}>Trắng</button>
+                        <button className={cx('color-button')}>Cam</button>
+                        <button className={cx('color-button')}>Xanh</button>
                     </div>
                 </div>
                 <div className={cx('size-options')}>
